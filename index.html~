@@ -23,7 +23,8 @@ app.controller('Ctrl', function($scope, $http, $interval) {
     <div class="score" ng-repeat="x in data">
     {{x.name}} : {{x.score}}
     </div> 
-    <a href="www.saproto.nl"">
+    <span>Sponsors:</span>
+    <a href="www.saproto.nl">Proto</a>
 </div>
 </body>
 </html>
