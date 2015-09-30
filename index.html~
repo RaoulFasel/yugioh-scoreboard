@@ -14,12 +14,6 @@ app.controller('Ctrl', function($scope, $http, $interval) {
         .success(function(response) {$scope.data = response.results;});
         
     }
-    $scope.goesUp = function(watchvariable){
-        
-        $scope.$watch(watchvariable, function(oldvalue,newvalue) {
-        alert('hey, myVar has changed!');
-   });
-    }
     $interval(load,2000);
 });
 </script>
@@ -27,9 +21,12 @@ app.controller('Ctrl', function($scope, $http, $interval) {
 
 <div ng-app="myApp" ng-controller="Ctrl">
     <div class="score" ng-repeat="x in data">
-    {{x.name}} : <span ng-style="{'positive':goesUp(x.score)}">{{x.score}}</span>
+    {{x.name}} : {{x.score}}
     </div> 
+
 </div>
+<span>Sponsors:</span>
+<a href="www.saproto.nl"><abbr title="Study Association">S.A.</abbr> Proto</a>
 </body>
 </html>
 

@@ -14,7 +14,7 @@ app.controller('Ctrl', function($scope, $http, $interval) {
         .success(function(response) {$scope.data = response.results;});
         
     }
-    $interval(load,2000);
+    $interval(load,5000);
 });
 </script>
 <body>
@@ -23,7 +23,10 @@ app.controller('Ctrl', function($scope, $http, $interval) {
     <div class="score" ng-repeat="x in data">
     {{x.name}} : {{x.score}}
     </div> 
+
 </div>
+<span>Sponsors:</span>
+<a href="www.saproto.nl"><abbr title="Study Association">S.A.</abbr> Proto</a>
 </body>
 </html>
 
