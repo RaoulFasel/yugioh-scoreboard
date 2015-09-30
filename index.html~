@@ -14,7 +14,7 @@ app.controller('Ctrl', function($scope, $http, $interval) {
         .success(function(response) {$scope.data = response.results;});
         
     }
-    $interval(load,2000);
+    $interval(load,5000);
 });
 </script>
 <body>
