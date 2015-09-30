@@ -1,9 +1,10 @@
 .score{
     display:inline-block;
-    margin:20px;
+    margin:1em;
     
 }
 body{
     text-align:center;
     font-family: 'Open Sans', sans-serif;
+    font-size:300%;
 }
